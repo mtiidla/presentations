@@ -1,4 +1,4 @@
-@file:Suppress("unused", "UNUSED_VARIABLE")
+@file:Suppress("unused")
 
 package ee.mtiida.meetups.kotlincph
 
@@ -41,6 +41,12 @@ fun displayAssetImageProblematic(asset: Asset) {
 
 
 
+
+
+
+
+
+
 //region OPINIONATED SOLUTION #1 - Refactor into function return type
 
 fun getAssetImage(asset: Asset) : String {
@@ -57,6 +63,10 @@ fun displayAssetImage1(asset: Asset) {
 }
 
 //endregion
+
+
+
+
 
 
 
@@ -103,6 +113,7 @@ fun displayAssetImage3(asset: Asset) {
         AssetType.MOVIE -> loadImage(asset.coverImageUrl)
     }.exhaustive()
 }
+
 
 fun Any?.exhaustive() = Unit
 

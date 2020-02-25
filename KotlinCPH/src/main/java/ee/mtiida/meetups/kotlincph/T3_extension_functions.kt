@@ -3,6 +3,7 @@
 package ee.mtiida.meetups.kotlincph
 
 import android.widget.TextView
+import okhttp3.MediaType
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.internal.canParseAsIpAddress
 
@@ -121,7 +122,7 @@ fun trashPublicNamespaceInThirdPartyLibrary() {
 
     "application/json".toMediaType()
 
-//    MediaType.parse("application/json")
+    MediaType.parse("application/json")
 
     "okhttp".canParseAsIpAddress()
 }

@@ -93,7 +93,7 @@ class MovieRepo(private val movieDao: MovieDao) {
 
     fun searchByYear(year: Int) = movieDao.moviesByYear(year)
 
-    fun moviesByYear(year: Int) = movieDao.moviesByYear(year)
+//    fun moviesByYear(year: Int) = movieDao.moviesByYear(year)
 }
 
 class SearchViewModel(private val movieRepo: MovieRepo) {
@@ -111,16 +111,16 @@ class SearchViewModel(private val movieRepo: MovieRepo) {
 
 
 
-class MoviesViewModel(private val movieRepo: MovieRepo) {
-
-    fun observeMoviesByYear(year: Int) {
-        movieRepo.moviesByYear(year)
-            .subscribe(
-                { movies -> /* handle movies multiple times */ },
-                { error -> /* handle error */ }
-            )
-    }
-}
+//class MoviesViewModel(private val movieRepo: MovieRepo) {
+//
+//    fun observeMoviesByYear(year: Int) {
+//        movieRepo.moviesByYear(year)
+//            .subscribe(
+//                { movies -> /* handle movies multiple times */ },
+//                { error -> /* handle error */ }
+//            )
+//    }
+//}
 
 //endregion
 

@@ -49,12 +49,13 @@ fun createDrama() {
         println(year)
     }
 
-    println(drama1.title)
-    println(drama1.year)
+    println(movie.title)
+    println(movie.year)
 
 }
 
 //endregion
+
 
 
 
@@ -82,6 +83,7 @@ fun isDrama(movie: Movie?): Boolean {
 }
 
 //endregion
+
 
 
 
@@ -164,6 +166,8 @@ class MovieListFragment : Fragment() {
 
 
 
+
+
 //region Opinion: Prefer .let over .run
 
 fun configureImmutableObject() {
@@ -176,6 +180,8 @@ fun configureImmutableObject() {
 }
 
 //endregion
+
+
 
 
 
